@@ -17,6 +17,8 @@ class UDPServer
             InetAddress IPAddress = receivePacket.getAddress();
             int port = receivePacket.getPort();
             String capitalizedSentence = sentence.toUpperCase();
+            sendData = capitalizedSentence.getBytes();
+            DatagramPacket sendPacket =
            }
     }
 }
