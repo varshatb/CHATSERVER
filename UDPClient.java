@@ -12,3 +12,6 @@ class UDPClient
 	byte[] receiveData = new byte[1024];
       boolean flag=true;
       while(flag)
+ {
+      String sentence = inFromUser.readLine();
+      sendData = sentence.getBytes();
